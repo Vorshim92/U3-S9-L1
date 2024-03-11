@@ -1,4 +1,4 @@
-const ButtonComponent = function (props) {
-  return <button id={props.id}>{props.text}</button>;
+const ButtonComponent = function ({ id, text }) {
+  return <button id={id}>{text}</button>;
 };
 export default ButtonComponent;
