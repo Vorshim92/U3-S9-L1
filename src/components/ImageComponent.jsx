@@ -1,7 +1,8 @@
 import { Component } from "react";
 class ImageComponent extends Component {
   render() {
-    return <img src={this.props.src} alt={this.props.alt} class={this.props.classname} />;
+    const { src, alt, classname } = this.props;
+    return <img src={src} alt={alt} className={classname} />;
   }
 }
 

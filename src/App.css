@@ -37,3 +37,18 @@
     transform: rotate(360deg);
   }
 }
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1); /* Ingrandisce all'originale */
+  }
+  50% {
+    transform: scale(1.5); /* Ingrandisce del 50% */
+  }
+  100% {
+    transform: scale(1); /* Ritorna alla dimensione originale */
+  }
+}
+
+.image-animation {
+  animation: zoomInOut 2s ease-in-out; /* Durata dell'animazione e curva di accelerazione */
+}
